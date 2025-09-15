@@ -45,7 +45,8 @@ Makefile
 # VS Code
 # =========================
 .vs/
-.vscode/
+.vscode/*
+!.vscode/**/*.json
 *.code-workspace
 
 # =========================
