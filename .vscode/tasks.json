@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build fastlib_tests",
+            "type": "shell",
+            "command": "cl.exe",
+            "args": [
+                "/EHsc",
+                "/std:c++20",
+                "/MD",
+                "/I${workspaceFolder}/fastlib/include",
+                "/IC:/libs/googletest/googletest/include",
+                "${workspaceFolder}/fastlib/src/computations.cpp",
+                "${workspaceFolder}/tests/tests.cpp",
+                "C:/libs/googletest/build/lib/Release/gtest.lib",
+                "C:/libs/googletest/build/lib/Release/gtest_main.lib",
+                "/Fe:${workspaceFolder}/build/fastlib_tests.exe"
+            ],
+            "group": "build",
+            "problemMatcher": ["$msCompile"]
+        }
+    ]
+}
