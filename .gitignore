@@ -1,0 +1,54 @@
+# =========================
+# C++ build artifacts
+# =========================
+/build/
+/*.exe
+/*.obj
+/*.pdb
+/*.ilk
+/*.idb
+/*.lib
+/*.exp
+/*.dll
+
+# =========================
+# Python artifacts
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+venv/
+.env/
+.env.bak/
+.env.local/
+
+# =========================
+# Pybind11 / compiled modules
+# =========================
+*.so
+*.pyd
+*.dll
+
+# =========================
+# CMake (if you ever use it)
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+*.code-workspace
+
+# =========================
+# Misc
+# =========================
+*.log
+.DS_Store
